@@ -42,21 +42,21 @@ async def start(client,message):
 	**Document Or Video** and enter new filename to rename it__
 	""",reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
-	 [[ InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/GreyMatter_Bots") ], 
-	[InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/@GreyMattersYT") ]  ]))
+	 [[ InlineKeyboardButton("📣Updates Channel📣" ,url="https://t.me/CrazeBots") ], 
+	[InlineKeyboardButton("DEVELOPER🧑‍💻", url="https://youtube.com/technologyrk") ]  ]))
 	    return
 	if id:
 	    if old == True:
 	        try:
-	            await client.send_message(id,"Your Frind Alredy Using Our Bot")
+	            await client.send_message(id,"Your Frind Already Using Our Bot")
 	            await message.reply_text(text =f"""
 	Hello {wish} {message.from_user.first_name }
 	__I am file renamer bot, Please sent any telegram 
 	**Document Or Video** and enter new filename to rename it__
 	""",reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
-	 [[ InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/GreyMatter_Bots") ], 
-	[InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/@GreyMattersYT") ]  ]))
+	 [[ InlineKeyboardButton("📣Updates Channel📣" ,url="https://t.me/CrazeBots") ], 
+	[InlineKeyboardButton("DEVELOPER🧑‍", url="https://youtube.com/technologyrk") ]  ]))
 	        except:
 	             return
 	    else:
@@ -71,8 +71,8 @@ async def start(client,message):
 	**Document Or Video** and enter new filename to rename it__
 	""",reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
-	 [[ InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/GreyMatter_Bots") ], 
-	[InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/@GreyMattersYT") ]  ]))
+	 [[ InlineKeyboardButton("📣Updates Channel📣" ,url="https://t.me/CrazeBots") ], 
+	[InlineKeyboardButton("DEVELOPER🧑‍", url="https://youtube.com/technologyrk") ]  ]))
 	         
 
 
@@ -103,7 +103,7 @@ async def send_doc(client,message):
        	daily = user_deta["daily"]
        	user_type = user_deta["usertype"]
        except:
-           await message.reply_text("database has been Cleared click on /start")
+           await message.reply_text("Database has been Cleared click on /start")
            return
            
            
@@ -118,7 +118,7 @@ async def send_doc(client,message):
        conversion = datetime.timedelta(seconds=left)
        ltime = str(conversion)
        if left > 0:       	    
-       	await message.reply_text(f"```Sorry Dude I am not only for YOU \n Flood control is active so please wait for {ltime}``` or buy premium /myplan",reply_to_message_id = message.id)
+       	await message.reply_text(f"```Sorry Dude I am not only for YOU \nFlood control is active so please wait for {ltime}``` or buy premium /myplan",reply_to_message_id = message.id)
        else:
        		# Forward a single message
            		
@@ -144,11 +144,11 @@ async def send_doc(client,message):
        		if value < file.file_size:
        		    if STRING:
        		        if buy_date==None:
-       		            await message.reply_text(f" You Can't Upload More Then {humanbytes(limit)} Used Daly Limit {humanbytes(used)} ",reply_markup = InlineKeyboardMarkup([[ InlineKeyboardButton("Upgrade 💰💳",callback_data = "upgrade") ]]))
+       		            await message.reply_text(f"You Can't Upload More Then {humanbytes(limit)} Used Daly Limit {humanbytes(used)} ",reply_markup = InlineKeyboardMarkup([[ InlineKeyboardButton("Upgrade 💰💳",callback_data = "upgrade") ]]))
        		            return
        		        pre_check = check_expi(buy_date)
        		        if pre_check == True:
-       		            await message.reply_text(f"""__What do you want me to do with this file?__\n**File Name** :- {filename}\n**File Size** :- {humanize.naturalsize(file.file_size)}\n**Dc ID** :- {dcid}""",reply_to_message_id = message.id,reply_markup = InlineKeyboardMarkup([[ InlineKeyboardButton("📝 Rename",callback_data = "rename"),InlineKeyboardButton("✖️ Cancel",callback_data = "cancel")  ]]))
+       		            await message.reply_text(f"""__What do you want me to do with this file?__\n**File Name** :- `{filename}`\n**File Size** :- {humanize.naturalsize(file.file_size)}\n**Dc ID** :- {dcid}""",reply_to_message_id = message.id,reply_markup = InlineKeyboardMarkup([[ InlineKeyboardButton("📝 Rename",callback_data = "rename"),InlineKeyboardButton("✖️ Cancel",callback_data = "cancel")  ]]))
        		            total_rename(int(botid),prrename)
        		            total_size(int(botid),prsize,file.file_size)
        		        else:
@@ -171,7 +171,7 @@ async def send_doc(client,message):
        		    fileid = file.file_id
        		    total_rename(int(botid),prrename)
        		    total_size(int(botid),prsize,file.file_size)
-       		    await message.reply_text(f"""__What do you want me to do with this file?__\n**File Name** :- {filename}\n**File Size** :- {filesize}\n**Dc ID** :- {dcid}""",reply_to_message_id = message.id,reply_markup = InlineKeyboardMarkup(
+       		    await message.reply_text(f"""__What do you want me to do with this file?__\n**File Name** :- `{filename}`\n**File Size** :- {filesize}\n**Dc ID** :- {dcid}""",reply_to_message_id = message.id,reply_markup = InlineKeyboardMarkup(
        		[[ InlineKeyboardButton("📝 Rename",callback_data = "rename"),
        		InlineKeyboardButton("✖️ Cancel",callback_data = "cancel")  ]]))
        		
