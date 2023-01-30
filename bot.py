@@ -25,7 +25,7 @@ bot = Client(
 
            plugins=dict(root='plugins'))
            
-
+'''
 if STRING:
     apps = [Client2,bot]
     for app in apps:
@@ -35,4 +35,5 @@ if STRING:
         app.stop()
     
 else:
-    bot.run()
+'''
+bot.run()
