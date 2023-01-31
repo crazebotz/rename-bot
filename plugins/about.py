@@ -10,4 +10,4 @@ async def start(client,message):
 	data = find_one(int(botid))
 	total_rename = data["total_rename"]
 	total_size = data["total_size"]
-	await message.reply_text(f"Total User:- {total_user()}\n**Bot :-** @RenamerTGBot\n**Buy Subscription :-** @TGContact_Bot\n**Subscribe :-** https://youtube.com/technologyrk\n\n**Total Renamed File :-** {total_rename}\n**Total Size Renamed :-** {humanbytes(int(total_size))} ",disable_web_page_preview=True,quote=True)
+	await message.reply_text(f"Total User:- {total_user()}\n**Bot :-** @TGRenamer_Robot\n**Buy Subscription :-** @TGContact_Bot\n**Subscribe :-** https://youtube.com/technologyrk\n\n**Total Renamed File :-** {total_rename}\n**Total Size Renamed :-** {humanbytes(int(total_size))} ",disable_web_page_preview=True,quote=True)
