@@ -2,6 +2,10 @@
 from pyrogram.types import (InlineKeyboardButton, InlineKeyboardMarkup,ForceReply)
 from pyrogram import Client , filters
 
+
+keybord = InlineKeyboardMarkup([[ 
+        			InlineKeyboardButton("ADMIN 🛂",url = "https://t.me/TgContact_bot")],[InlineKeyboardButton("Cancel",callback_data = "cancel")  ]])
+
 @Client.on_callback_query(filters.regex('upgrade'))
 async def upgrade(bot,update):
 	text = """**Free Plan User**
@@ -10,17 +14,13 @@ async def upgrade(bot,update):
 	
 	**VIP** 
 	Daily  Upload  limit unlimited
-	Price Rs 100  🇮🇳/🌎 2$  per Month
+	Price Rs 99  🇮🇳/🌎 2$  per Month
 	
 	
-	Pay Using Upi I'd ```greymatter658@ybl```
+	Pay Using Upi I'd ```rahulji.7@ybl```
 	
 	After Payment Send Screenshots Of 
         Payment To Admin"""
-	keybord = InlineKeyboardMarkup([[ 
-        			InlineKeyboardButton("ADMIN 🛂",url = "https://t.me/OTT_Zone_Admin")], 
-        			[InlineKeyboardButton("PayPal 🌎",url = "https://www.paypal.me/mokshb658"),
-        			InlineKeyboardButton("Other Methods",url = "https://t.me/GreyMatters_about/66")],[InlineKeyboardButton("Cancel",callback_data = "cancel")  ]])
 	await update.message.edit(text = text,reply_markup = keybord)
 	
 
@@ -32,15 +32,11 @@ async def upgradecm(bot,message):
 	
 	**VIP** 
 	Daily  Upload  limit unlimited 
-	Price Rs 49  🇮🇳/🌎 1$  per Month
+	Price Rs 99  🇮🇳/🌎 2$  per Month
 	
 	
-	Pay Using Upi I'd ```greymatter658@ybl```
+	Pay Using Upi I'd ``rahulji.7@ybl``
 	
 	After Payment Send Screenshots Of 
         Payment To Admin"""
-	keybord = InlineKeyboardMarkup([[ 
-        			InlineKeyboardButton("ADMIN 🛂",url = "https://t.me/OTT_Zone_Admin")], 
-        			[InlineKeyboardButton("PayPal 🌎",url = "https://www.paypal.me/mokshb658"),
-        			InlineKeyboardButton("Other Methods",url = "https://t.me/GreyMatters_about/66")],[InlineKeyboardButton("Cancel",callback_data = "cancel")  ]])
 	await message.reply_text(text = text,reply_markup = keybord)
