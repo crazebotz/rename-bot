@@ -85,10 +85,12 @@ async def send_doc(client,message):
        	try:
        		await client.get_chat_member(update_channel, user_id)
        	except UserNotParticipant:
-       		await message.reply_text("**__You are not subscribed my channel__** ",
+       		await message.reply_text("""**You need to join @CrazeBots in order to use this bot. Being a part of this channel keeps you informed of the latest updates.
+
+So please join channel and enjoy bot 😇** """,
        		reply_to_message_id = message.id,
        		reply_markup = InlineKeyboardMarkup(
-       		[ [ InlineKeyboardButton("Support 🇮🇳" ,url=f"https://t.me/{update_channel}") ]   ]))
+       		[ [ InlineKeyboardButton("Join CrazeBots Channel🧑‍💻" ,url=f"https://t.me/CrazeBots") ]   ]))
        		return
        try:
            bot_data = find_one(int(botid))
@@ -118,7 +120,7 @@ async def send_doc(client,message):
        conversion = datetime.timedelta(seconds=left)
        ltime = str(conversion)
        if left > 0:       	    
-       	await message.reply_text(f"```Sorry Dude I am not only for YOU \nFlood control is active so please wait for {ltime}``` or buy premium /myplan",reply_to_message_id = message.id)
+       	await message.reply_text(f"```Sorry Dear I am not only for YOU \nFlood control is active so please wait for {ltime}``` or buy premium /myplan",reply_to_message_id = message.id)
        else:
        		# Forward a single message
            		
