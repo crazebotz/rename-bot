@@ -33,6 +33,9 @@ refer - Refer to increase your limits
 myplan - Check Your plan Usage
 viewthumb - View Your Saved thumbnail
 delthumb - Delete Your Thumbnail
+see_caption - View Your Custom Caption
+set_caption - SET Your Custom Caption
+del_caption - Reset Your Custom Caption to Default
 about - About Bot
 broadcast - Admin Use Only Send Message To All Users
 addpremium - Admin Use Only
