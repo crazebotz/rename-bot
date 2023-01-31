@@ -1,6 +1,7 @@
 import os
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
 import time
+from config import Config
 from pyrogram import Client, filters
 from pyrogram.types import ( InlineKeyboardButton, InlineKeyboardMarkup,ForceReply)
 import humanize
@@ -10,12 +11,12 @@ from helper.database import  insert ,find_one,used_limit,usertype,uploadlimit,ad
 from pyrogram.file_id import FileId
 from helper.database import daily as daily_
 from helper.date import add_date ,check_expi
-CHANNEL = os.environ.get('CHANNEL',"")
+CHANNEL =  Config.CHANNEL
 import datetime
 from datetime import date as date_
-STRING = os.environ.get("STRING","")
-log_channel = int(os.environ.get("LOG_CHANNEL",""))
-token = os.environ.get('TOKEN','')
+STRING = Config.STRING
+log_channel = Config.LOG_CHANNEL
+token = Config.TOKEN
 botid = token.split(':')[0]
 
 #Part of Day --------------------
