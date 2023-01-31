@@ -6,14 +6,15 @@ class Config(object):
     # The Telegram API things
     API_ID = int(os.environ.get("API_ID", 12345))
     API_HASH = os.environ.get("API_HASH")
-    # Get these values from my.telegram.org
+   
     
- 
     # your telegram id
-    OWNER_ID = int(os.environ.get("OWNER_ID", ""))
-    SESSION_NAME = "UPLOADER-X-BOT"
+    ADMIN = int(os.environ.get("ADMIN", ""))
+    CHANNEL = int(os.environ.get("CHANNEL", "-1001332181134"))
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
+
     # database uri (mongodb)
-    DB_URL = os.environ.get("DATABASE_URL", "")
+    DB_URL = os.environ.get("DB_URL", "")
     DB_NAME = os.environ.get("MYDATABASE", "")
-    MAX_RESULTS = "50"
-    PREMIUM_USER = os.environ.get("PREMIUM_USER")
+    STRING = (os.environ.get("STRING", ""))
+ 
