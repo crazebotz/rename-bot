@@ -9,7 +9,7 @@ class Config(object):
    
     
     # your telegram id
-    ADMIN = set(str(x) for x in os.environ.get("ADMIN", "").split())
+    ADMIN = list(str(x) for x in os.environ.get("ADMIN", "").split())
     CHANNEL = int(os.environ.get("CHANNEL", "-1001332181134"))
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
 
