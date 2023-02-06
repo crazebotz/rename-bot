@@ -20,8 +20,8 @@ async def warn(c, m):
 
 @Client.on_message(filters.private & filters.user(ADMIN) & filters.command(["addpremium"]))
 async def buypremium(bot, message):
-	await message.reply_text("Select Plan.........",quote=True,reply_markup=InlineKeyboardMarkup([[ 
-        			InlineKeyboardButton("VIP",callback_data = "vip") ]]))
+	await message.reply_text("**Select Plan...**",quote=True,reply_markup=InlineKeyboardMarkup([[ 
+        			InlineKeyboardButton("VIP 🎯",callback_data = "vip") ]]))
         			
 
 @Client.on_callback_query(filters.regex('vip'))
