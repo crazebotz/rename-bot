@@ -1,5 +1,6 @@
 import os
-import config
+from config import Config
+
 from pyrogram.errors import FloodWait
 import asyncio
 from pyrogram import Client ,filters
