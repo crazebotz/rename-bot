@@ -1,4 +1,5 @@
-import os 
+import os
+import config
 from pyrogram import Client, filters
 token =  Config.TOKEN
 botid = token.split(':')[0]
