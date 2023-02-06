@@ -1,6 +1,6 @@
 import pymongo 
 import os
-import config
+from config import Config
 
 from helper.date import add_date
 DB_NAME = Config.API_HASH
