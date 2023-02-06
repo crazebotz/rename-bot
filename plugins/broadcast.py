@@ -26,6 +26,6 @@ async def broadcast(bot, message):
      	delete({"_id":id})     	 
      	pass
      try:
-     	await ms.edit( f"Message sent to {success} chat(s). {failed} chat(s) failed on receiving message.\nTotal - {tot}" )
+     	await ms.edit( f"**Total:** `{tot}`\n**Success:** `{success}`\n**Failed:** `{failed}`" )
      except FloodWait as e:
      	await asyncio.sleep(t.x)
