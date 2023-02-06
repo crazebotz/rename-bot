@@ -44,7 +44,7 @@ async def start(client,message):
 	""",reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
 	 [[ InlineKeyboardButton("📣Updates Channel📣" ,url="https://t.me/CrazeBots") ], 
-	[InlineKeyboardButton("DEVELOPER🧑‍💻", url="https://youtube.com/technologyrk") ]  ]))
+	[InlineKeyboardButton("DEVELOPER🧑‍💻", url="https://t.me/Rahul_thakor") ]  ]))
 	    return
 	if id:
 	    if old == True:
@@ -57,11 +57,11 @@ async def start(client,message):
 	""",reply_to_message_id = message.id ,  
 	reply_markup=InlineKeyboardMarkup(
 	 [[ InlineKeyboardButton("📣Updates Channel📣" ,url="https://t.me/CrazeBots") ], 
-	[InlineKeyboardButton("DEVELOPER🧑‍", url="https://youtube.com/technologyrk") ]  ]))
+	[InlineKeyboardButton("DEVELOPER🧑‍", url="https://t.me/Rahul_thakor") ]  ]))
 	        except:
 	             return
 	    else:
-	         await client.send_message(id,"Congrats! You Won 2000MB Upload limit")
+	         await client.send_message(id,"Congrats! You Won 2GB Upload limit")
 	         _user_= find_one(int(id))
 	         limit = _user_["uploadlimit"]
 	         new_limit = limit + 2147483648
@@ -158,10 +158,10 @@ So please join channel and enjoy bot 😇** """,
        		            uploadlimit(message.from_user.id,2147483648)
        		            usertype(message.from_user.id,"Free")
 	
-       		            await message.reply_text(f'Your Plane Expired On {buy_date}',quote=True)
+       		            await message.reply_text(f'Your Plan Expired On {buy_date}',quote=True)
        		            return
        		    else:
-       		          	await message.reply_text("Can't upload files bigger than 2GB ")
+       		          	await message.reply_text("Can't upload files bigger than 2GB")
        		          	return
        		else:
        		    if buy_date:
