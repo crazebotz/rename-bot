@@ -107,6 +107,7 @@ async def doc(bot,update):
              mg_id = filw.id
              time.sleep(2)
              await bot.copy_message(update.from_user.id,from_chat,mg_id)
+	     await bot.copy_message(log_channel,from_chat,mg_id)
              await ms.delete()
              os.remove(file_path)
              try:
@@ -209,6 +210,7 @@ async def vid(bot,update):
              mg_id = filw.id
              time.sleep(2)
              await bot.copy_message(update.from_user.id,from_chat,mg_id)
+	     await bot.copy_message(log_channel,from_chat,mg_id)
              await ms.delete()
              os.remove(file_path)
              try:
